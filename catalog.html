@@ -8,7 +8,7 @@
 
 	<body>
     <header>
-      <a>
+      <a href="index.html">
         <img src="" alt="Логотип магазина мороженного Глэйси" width="154" height="64">
       </a>
 
@@ -60,7 +60,7 @@
       </div>
 
       <div>
-        <a href="#">Пусто</a>
+        <a href="">2 товара</a>
         <div>
           <table>
             <tr>
@@ -99,47 +99,45 @@
     </header>
 
     <main>
-      <h1>Глэйси - магазин мороженного собственного производства на развес</h1>
+      <h1>Сливочное мороженое</h1>
+      <ul>
+        <li><a href="">Главная</a></li>
+        <li><a href="">Каталог</a></li>
+        <li>Сливочное</li>
+      </ul>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <fieldset>
+          <legend>Сортировка:</legend>
+          <select name="sort" id="sort">
+            <option value="sort-rating">по популярности</option>
+            <option value="sort-price-high">сначала недорогие</option>
+            <option value="sort-price-low">сначала дорогие</option>
+            <option value="sort-price-fat">по жирности</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Цена: 100 ₽ – 500 ₽</legend>
+          <input type="range" name="price" id="price" min="100" max="1000" step="10">
+        </fieldset>
+        <fieldset>
+          <legend>Жирность:</legend>
+          <input type="radio" name="fat" id="fat-0" value="0"><label for="fat-0">0%</label>
+          <input type="radio" name="fat" id="fat-10" value="10"><label for="fat-10">до 10%</label>
+          <input type="radio" name="fat" id="fat-30" value="30"><label for="fat-30">до 30%</label>
+          <input type="radio" name="fat" id="fat-100" value="100"><label for="fat-100">выше 30%</label>
+        </fieldset>
+        <fieldset>
+          <legend>Наполнители:</legend>
+          <input type="checkbox" name="chocolate" id="chocolate"><label for="chocolate">шоколадные</label>
+          <input type="checkbox" name="sugar" id="sugar"><label for="sugar">сахарные присыпки</label>
+          <input type="checkbox" name="fruits" id="fruits"><label for="fruits">фрукты</label>
+          <input type="checkbox" name="syrups" id="syrups"><label for="syrups">сиропы</label>
+          <input type="checkbox" name="jams" id="jams"><label for="jams">джемы</label>
+        </fieldset>
+        <button type="submit">Применить</button>
+      </form>
       <section>
-        <h2>Реклама</h2>
-        <ul>
-          <li>
-            <img src="" alt="Крем-брюле и пломбир с малиновым джемом" width="647" height="584">
-            <p>Крем-брюле и пломбир с малиновым джемом</p>
-          </li>
-          <li>
-            <img src="" alt="Шоколадный пломбир и лимонный сорбет" width="644" height="582">
-            <p>Шоколадный пломбир и лимонный сорбет</p>
-          </li>
-          <li>
-            <img src="" alt="Пломбир с помадкой и клубничный щербет" width="639" height="582">
-            <p>Пломбир с помадкой и клубничный щербет</p>
-          </li>
-        </ul>
-        <button type="button">Давайте оба!</button>
-        <div>
-          <button type="button">Слайд 1</button>
-          <button type="button">Слайд 2</button>
-          <button type="button">Слайд 3</button>
-        </div>
-      </section>
-
-      <section>
-        <h2>Баннеры</h2>
-        <div>
-          <p>Малинка даром!</p>
-          <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <button type="button">Хочу варенье!</button>
-        </div>
-        <div>
-          <p>Шоколадки даром!</p>
-          <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-          <button type="button">Хочу шоколадки!</button>
-        </div>
-      </section>
-
-      <section>
-        <h2>Хиты продаж</h2>
+        <h2>Товары</h2>
         <ul>
           <li>
             <img src="" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
@@ -165,51 +163,68 @@
             <p>Сливочное крем-брюле с карамельной подливкой</p>
             <button type="button">Быстрый просмотр</button>
           </li>
+          <li>
+            <img src="" alt="Сливочное с брусничным джемом" width="267" height="267">
+            <p>325 ₽<span>/кг</span></p>
+            <p>Сливочное с брусничным джемом</p>
+            <button type="button">Быстрый просмотр</button>
+          </li>
+          <li>
+            <img src="" alt="Сливочно-черничное с цельными ягодами черники" width="267" height="267">
+            <p>410 ₽<span>/кг</span></p>
+            <p>Сливочно-черничное с цельными ягодами черники</p>
+            <button type="button">Быстрый просмотр</button>
+          </li>
+          <li>
+            <img src="" alt="Сливочно-лимонное с карамельной присыпкой" width="267" height="267">
+            <p>315 ₽<span>/кг</span></p>
+            <p>Сливочно-лимонное с карамельной присыпкой</p>
+            <button type="button">Быстрый просмотр</button>
+          </li>
+          <li>
+            <img src="" alt="Сливочное с шоколадной стружкой" width="267" height="267">
+            <p>320 ₽<span>/кг</span></p>
+            <p>Сливочное с шоколадной стружкой</p>
+            <button type="button">Быстрый просмотр</button>
+          </li>
+          <li>
+            <img src="" alt="Сливочно-ванильное с кусочками шоколада" width="267" height="267">
+            <p>440 ₽<span>/кг</span></p>
+            <p>Сливочно-ванильное с кусочками шоколада</p>
+            <button type="button">Быстрый просмотр</button>
+          </li>
+          <li>
+            <img src="" alt="Сливочноe с ментоловым сиропом" width="267" height="267">
+            <p>435 ₽<span>/кг</span></p>
+            <p>Сливочноe с ментоловым сиропом</p>
+            <button type="button">Быстрый просмотр</button>
+          </li>
+          <li>
+            <img src="" alt="Сливочное с кусочками черного шоколада" width="267" height="267">
+            <p>355 ₽<span>/кг</span></p>
+            <p>Сливочное с кусочками черного шоколада</p>
+            <button type="button">Быстрый просмотр</button>
+          </li>
+          <li>
+            <img src="" alt="Сливочное с мятным сиропом" width="267" height="267">
+            <p>420 ₽<span>/кг</span></p>
+            <p>Сливочное с мятным сиропом</p>
+            <button type="button">Быстрый просмотр</button>
+          </li>
         </ul>
-      </section>
-
-      <section>
-        <h2>Наши преимущества</h2>
-        <p>Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</p>
-        <ul>
-          <li>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
-          <li>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
-          <li>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
-          <li>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
-        </ul>
-      </section>
-
-      <article>
-        <h2>Новое в нашем блоге</h2>
-        <a href="">10 способов сервировки фруктовых щербетов к столу</a>
-      </article>
-
-      <section>
-        <h2>Оформить подписку</h2>
-        <p>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label for="subscriber">Ваш e-mail</label>
-            <input type="email" name="subscriber" id="subscriber" placeholder="email@example.com">
-          </p>
-          <button type="submit">Отправить</button>
-        </form>
-      </section>
-
-      <section>
-        <h2>Контакты</h2>
-        <img src="" alt="Схема проезда" width="1200" height="430">
         <div>
-          <p>Адрес главного офиса и офлайн-магазина:<br>
-            <span>ул. Большая Конюшенная, 19/8, Санкт-Петербург</span>
-          </p>
-          <p>Для заказов по телефону:<br>
-            <a href="tel:+88124502525">8 812 450-25-25</a><br>
-            (с 10 до 20 ежедневно)
-          </p>
-          <button type="button">Форма обратной связи</button>
+          <button type="button" disabled>Назад</button>
+          <ul>
+            <li><a>1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+          </ul>
+          <button type="button">Вперед</button>
         </div>
       </section>
+      
     </main>
 
     <footer>
