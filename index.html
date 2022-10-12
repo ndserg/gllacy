@@ -14,7 +14,20 @@
 
       <nav>
         <ul>
-          <li><a href="catalog.html">Каталог</a></li>
+          <li>
+            <a href="catalog.html">Каталог</a>
+            <ul>
+              <li>
+                <b><a href="#">Новинки</a></b>
+                <ul>
+                  <li><a href="#">Сливочное</a></li>
+                  <li><a href="#">Щербеты</a></li>
+                  <li><a href="#">Фруктовый лед</a></li>
+                  <li><a href="#">Мелорин</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
           <li><a href="delivery.html">Доставка и оплата</a></li>
           <li><a href="about.html">О компании</a></li>
         </ul>
@@ -23,36 +36,51 @@
       <div>
         <a>Поиск</a>
         <p>
-        <label for="search">Поиск</label><input type="search" name="search" id="search" placeholder="Крем-юрюле">
+        <label for="search">Поиск</label>
+        <input type="search" name="search" id="search" placeholder="Крем-юрюле">
         <button type="button">Найти</button>
         </p>
       </div>
 
       <div>
         <a>Вход</a>
-        <form action="" method="get">
-          <label for="email">E-mail</label><input type="email" name="email" id="email" placeholder="email@example.com">
-          <label for="password">Пароль</label><input type="password" name="password" id="password" placeholder="......">
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="email@example.com">
+          </p>
+          <p>
+            <label for="password">Пароль</label>
+            <input type="password" name="password" id="password" placeholder="••••••">
+          </p>
           <button type="submit">Войти</button>
           <a href="#">Забыли пароль?</a>
           <a href="#">Новая регистрация</a>
         </form>
       </div>
 
-      <div>
+      <section>
         <a>Пусто</a>
         <div>
           <table>
             <tr>
-              <td><button type="button">Удалить</button></td>
-              <td><img src="" alt="Пломбир с апельсиновым джемом" width="33" height="33"></td>
+              <td>
+                <button type="button">Удалить</button>
+              </td>
+              <td>
+                <img src="" alt="Пломбир с апельсиновым джемом" width="33" height="33">
+              </td>
               <td>Пломбир с апельсиновым джемом</td>
               <td>1.5 кг x 200 руб.</td>
               <td>300 руб.</td>
             </tr>
             <tr>
-              <td><button type="button">Удалить</button></td>
-              <td><img src="" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33"></td>
+              <td>
+                <button type="button">Удалить</button>
+              </td>
+              <td>
+                <img src="" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33">
+              </td>
               <td>Клубничный пломбир с присыпкой из белого шоколада</td>
               <td>1.5 кг x 300 руб.</td>
               <td>450 руб.</td>
@@ -64,6 +92,7 @@
       </div>
 
       <div>
+        <p>Время работы:</p>
         <p>с 10 до 20, ежедневно</p>
         <a href="tel:+88124502525">8 812 450-25-25</a>
       </div>
@@ -73,8 +102,20 @@
       <h1>Глэйси - магазин мороженного собственного производства на развес</h1>
       <section>
         <h2>Реклама</h2>
-        <img src="" alt="Крем-брюле и пломбир с малиновым джемом" width="647" height="584">
-        <p>Крем-брюле и пломбир с малиновым джемом</p>
+        <ul>
+          <li>
+            <img src="" alt="Крем-брюле и пломбир с малиновым джемом" width="647" height="584">
+            <p>Крем-брюле и пломбир с малиновым джемом</p>
+          </li>
+          <li>
+            <img src="" alt="Шоколадный пломбир и лимонный сорбет" width="644" height="582">
+            <p>Шоколадный пломбир и лимонный сорбет</p>
+          </li>
+          <li>
+            <img src="" alt="Пломбир с помадкой и клубничный щербет" width="639" height="582">
+            <p>Пломбир с помадкой и клубничный щербет</p>
+          </li>
+        </ul>
         <button type="button">Давайте оба!</button>
         <div>
           <button type="button">Слайд 1</button>
@@ -142,8 +183,11 @@
       <section>
         <h2>Оформить подписку</h2>
         <p>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <form action="" method="get">
-          <label for="subscriber">Ваш e-mail</label><input type="email" name="subscriber" id="subscriber">
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label for="subscriber">Ваш e-mail</label>
+            <input type="email" name="subscriber" id="subscriber" placeholder="email@example.com">
+          </p>
           <button type="submit">Отправить</button>
         </form>
       </section>
@@ -190,6 +234,23 @@
         Сделано в HTML Academy © 2019
       </p>
     </footer>
+
+    <section>
+      <h2>Форма обратной связи</h2>
+      <p>Мы обязательно вам ответим!</p>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="user-name">Ваше Имя и Фамилия:</label>
+          <input type="text" name="user-name" id="user-name" placeholder="Имя Фамилия">
+        </p>
+        <p></p>
+          <label for="user-email">Ваш E-mail:</label>
+          <input type="email" name="user-email" id="user-email" placeholder="email@example.com">
+        </p>
+        <textarea name="user-message" id="user-message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
 
 	</body>
 </html>
