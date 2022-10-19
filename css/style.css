@@ -301,6 +301,12 @@ border-radius: 4px;
   line-height: 22px;
 }
 
+.promo-item {
+  width: 560px;
+  min-height: 229px;
+  background-color: transparent;
+}
+
 .promo-title {
   font-size: 35px;
   line-height: 41px;
