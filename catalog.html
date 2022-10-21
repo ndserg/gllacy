@@ -38,59 +38,61 @@
         <div class="user-nav">
           <div class="site-search">
             <a class="search-link" href="#">Поиск</a>
-            <p class="search-form visually-hidden">
-              <label for="search">Поиск</label>
+            <div class="search-form visually-hidden">
+              <label class="visually-hidden" for="search">Поиск</label>
               <input class="input-text" type="search" name="search" id="search" placeholder="Крем-брюле">
-              <button type="button">Найти</button>
-            </p>
+              <button class="visually-hidden" type="button">Найти</button>
+            </div>
           </div>
 
           <div class="user-menu">
             <a class="login-link" href="#">Вход</a>
             <form class="login-form visually-hidden" action="https://echo.htmlacademy.ru" method="post">
-              <p>
-                <label for="email">E-mail</label>
+              <p class="login-form-item">
+                <label class="visually-hidden" for="email">E-mail</label>
                 <input class="input-text" type="email" name="email" id="email" placeholder="email@example.com">
               </p>
               <p>
-                <label for="password">Пароль</label>
+                <label class="visually-hidden" for="password">Пароль</label>
                 <input class="input-text" type="password" name="password" id="password" placeholder="••••••">
               </p>
               <button class="button" type="submit">Войти</button>
-              <a class="login-form-link" href="#">Забыли пароль?</a>
-              <a class="login-form-link" href="#">Новая регистрация</a>
+              <p class="logn-form-help">
+                <a class="login-form-link" href="#">Забыли пароль?</a>
+                <a class="login-form-link" href="#">Новая регистрация</a>
+              </p>
             </form>
           </div>
 
           <div class="user-cart">
             <a class="cart-link" href="#">2 товара</a>
             <div class="cart visually-hidden">
-              <table>
+              <table class="products-table">
                 <tr>
-                  <td>
-                    <button type="button">Удалить</button>
+                  <td class="cart-item-delete">
+                    <button type="button">X</button>
                   </td>
-                  <td>
+                  <td class="cart-item-image">
                     <img src="img/products/33x33/1.png" alt="Пломбир с апельсиновым джемом" width="33" height="33">
                   </td>
-                  <td>Пломбир с апельсиновым джемом</td>
-                  <td>1.5 кг x <span class="item-price">200 руб.</span></td>
-                  <td>300 руб.</td>
+                  <td class="cart-item-description">Пломбир с апельсиновым джемом</td>
+                  <td class="cart-item-price">1.5 кг x <span class="item-price">200 руб.</span></td>
+                  <td class="cart-item-total">300 руб.</td>
                 </tr>
                 <tr>
-                  <td>
-                    <button type="button">Удалить</button>
+                  <td class="cart-item-delete">
+                    <button type="button">X</button>
                   </td>
-                  <td>
+                  <td class="cart-item-image">
                     <img src="img/products/33x33/3.png" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33">
                   </td>
-                  <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                  <td>1.5 кг x <span class="item-price">300 руб.</span></td>
-                  <td>450 руб.</td>
+                  <td class="cart-item-description">Клубничный пломбир с присыпкой из белого шоколада</td>
+                  <td class="cart-item-price">1.5 кг x <span class="item-price">300 руб.</span></td>
+                  <td class="cart-item-total">450 руб.</td>
                 </tr>
               </table>
               <p class="cart-total">Итого: 750 руб.</p>
-              <button class="button" type="button">Оформить заказ</button>
+              <button class="button cart-button" type="button">Оформить заказ</button>
             </div>
           </div>
         </div>
