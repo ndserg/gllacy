@@ -5,7 +5,7 @@
 		<meta charset="utf-8">
 		<title>Глэйси - магазин мороженного собственного производства на развес</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
 
     <link rel="icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="img/icons/152.png">
@@ -50,11 +50,11 @@
               <a class="login-link" href="#">Вход</a>
               <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
                 <p class="login-form-item">
-                  <label class="visually-hidden" for="email">E-mail</label>
+                  <label class="visually-hidden" for="email">Ваш логин или E-mail</label>
                   <input class="input-text" type="email" name="email" id="email" placeholder="email@example.com">
                 </p>
                 <p class="login-form-item">
-                  <label class="visually-hidden" for="password">Пароль</label>
+                  <label class="visually-hidden" for="password">Ваш пароль</label>
                   <input class="input-text" type="password" name="password" id="password" placeholder="••••••">
                 </p>
                 <button class="button login-button" type="submit">Войти</button>
@@ -66,7 +66,7 @@
             </div>
 
             <div class="user-cart">
-              <a class="cart-link" href="#">Пусто</a>
+              <a class="cart-link" href="#" aria-label="В корзине нет товаров">Пусто</a>
             </div>
           </div>
 
@@ -98,7 +98,7 @@
               </li>
             </ul>
             <div class="slider-controls">
-              <button type="button" aria-label="Слайд 1"></button>
+              <button class="current" type="button" aria-label="Слайд 1"></button>
               <button type="button" aria-label="Слайд 2"></button>
               <button type="button" aria-label="Слайд 3"></button>
             </div>
@@ -109,12 +109,12 @@
             <div class="promo-item promo-item-1">
               <h3 class="promo-title">Малинка даром!</h3>
               <p class="promo-text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-              <button class="button promo-button" type="button">Хочу варенье!</button>
+              <a class="button promo-button" href="#">Хочу варенье!</a>
             </div>
             <div class="promo-item promo-item-2">
               <h3 class="promo-title">Шоколадки даром!</h3>
               <p class="promo-text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-              <button class="button promo-button" type="button">Хочу шоколадки!</button>
+              <a class="button promo-button" href="#">Хочу шоколадки!</a>
             </div>
           </section>
 
@@ -124,33 +124,33 @@
               <li class="top-sales-item">
                 <div class="top-sales-wrapper">
                   <h3 class="top-sales-item-title"><a href="#" class="top-sales-link">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
-                  <img src="img/products/1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
-                  <p class="top-sales-price">310 ₽<span>/кг</span></p>
-                  <button class="button top-sales-button" type="button">Быстрый просмотр</button>
+                  <img src="img/products/1.png" alt="" width="267" height="267">
+                  <p class="top-sales-price">310 ₽<span>&nbsp;/кг</span></p>
+                  <button class="button top-sales-button" type="button" aria-label="Открыть быстрый просмотр товара мороженного Сливочное с апельсиновым джемом и цитрусовой стружкой">Быстрый просмотр</button>
                 </div>
               </li>
               <li class="top-sales-item">
                 <div class="top-sales-wrapper">
                   <h3 class="top-sales-item-title"><a href="#" class="top-sales-link">Сливочно-кофейное с кусочками шоколада</a></h3>
-                  <img src="img/products/2.png" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
-                  <p class="top-sales-price">380 ₽<span>/кг</span></p>
-                  <button class="button top-sales-button" type="button">Быстрый просмотр</button>
+                  <img src="img/products/2.png" alt="" width="267" height="267">
+                  <p class="top-sales-price">380 ₽<span>&nbsp;/кг</span></p>
+                  <button class="button top-sales-button" type="button" aria-label="Открыть быстрый просмотр товара мороженного Сливочно-кофейное с кусочками шоколада">Быстрый просмотр</button>
                 </div>
               </li>
               <li class="top-sales-item">
                 <div class="top-sales-wrapper">
                   <h3 class="top-sales-item-title"><a href="#" class="top-sales-link">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
-                  <img src="img/products/3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
-                  <p class="top-sales-price">355 ₽<span>/кг</span></p>
-                  <button class="button top-sales-button" type="button">Быстрый просмотр</button>
+                  <img src="img/products/3.png" alt="" width="267" height="267">
+                  <p class="top-sales-price">355 ₽<span>&nbsp;/кг</span></p>
+                  <button class="button top-sales-button" type="button" aria-label="Открыть быстрый просмотр товара мороженного Сливочно-клубничное с присыпкой из белого шоколада">Быстрый просмотр</button>
                 </div>
               </li>
               <li class="top-sales-item">
                 <div class="top-sales-wrapper">
                   <h3 class="top-sales-item-title"><a href="#" class="top-sales-link">Сливочное крем-брюле с карамельной подливкой</a></h3>
-                  <img src="img/products/4.png" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
-                  <p class="top-sales-price">415 ₽<span>/кг</span></p>
-                  <button class="button top-sales-button" type="button">Быстрый просмотр</button>
+                  <img src="img/products/4.png" alt="" width="267" height="267">
+                  <p class="top-sales-price">415 ₽<span>&nbsp;/кг</span></p>
+                  <button class="button top-sales-button" type="button" aria-label="Открыть быстрый просмотр товара мороженного Сливочное крем-брюле с карамельной подливкой">Быстрый просмотр</button>
                 </div>
               </li>
             </ul>
@@ -171,7 +171,6 @@
             <article class="news">
               <h2>Новое в нашем блоге</h2>
               <a class="news-link" href="#">10 способов сервировки фруктовых щербетов<br> к столу</a>
-              <img src="img/strawberry-bg.jpg" alt="Фруктовый щербет" width="560" height="220">
             </article>
 
             <div class="subscription">
@@ -198,7 +197,7 @@
                 <img src="img/icons/pin.svg" alt="Адрес: ул. Большая Конюшенная, 19/8, Санкт-Петербург" width="80" height="140">
               </a>
               <div class="address">
-                <p class="contacts-street">Адрес главного офиса и офлайн-магазина:<br>
+                <p class="contacts-street">Адрес главного офиса<br> и офлайн-магазина:<br>
                   <span>ул. Большая Конюшенная, 19/8, Санкт-Петербург</span>
                 </p>
                 <p class="contacts-phone">Для заказов по телефону:<br>
@@ -217,10 +216,10 @@
           <section class="social">
             <h2 class="visually-hidden">Мы в соцсетях</h2>
             <ul class="social-list">
-              <li><a href="#"><img src="img/icons/facebook.svg" width="32" height="32" alt="Фейсбук"></a></li>
-              <li><a href="#"><img src="img/icons/instagram.svg" width="32" height="32" alt="Вконтакте"></a></li>
-              <li><a href="#"><img src="img/icons/vk.svg" width="32" height="32" alt="Инстаграм"></a></li>
-              <li><a href="#"><img src="img/icons/twitter.svg" width="32" height="32" alt="Твитер"></a></li>
+              <li><a href="#"><img src="img/icons/facebook.svg" width="35" height="35" alt="Фейсбук"></a></li>
+              <li><a href="#"><img src="img/icons/vk.svg" width="35" height="35" alt="Инстаграм"></a></li>
+              <li><a href="#"><img src="img/icons/instagram.svg" width="35" height="35" alt="Вконтакте"></a></li>
+              <li><a href="#"><img src="img/icons/twitter.svg" width="35" height="35" alt="Твитер"></a></li>
             </ul>
           </section>
 
@@ -257,10 +256,10 @@
             <label class="visually-hidden" for="user-email">Ваш E-mail:</label>
             <input class="message-form-input input-text" type="email" name="user-email" id="user-email" placeholder="email@example.com">
           </p>
-          <textarea class="message-form-textarea input-text" name="user-message" id="user-message" cols="30" rows="9" placeholder="В свободной форме"></textarea>
+          <textarea class="message-form-textarea input-text" name="user-message" id="user-message" cols="30" rows="9" placeholder="В свободной форме" aria-label="Ваше сообщение"></textarea>
           <button class="message-form-button button" type="submit">Отправить</button>
         </form>
-        <button class="modal-close" type="button" aria-label="Закрыть окно"></button>
+        <button class="modal-close" type="button" aria-label="Закрыть форму обратной связи"></button>
       </div>
     </section>
 
