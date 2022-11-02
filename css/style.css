@@ -477,10 +477,10 @@ img {
 /* Login form */
 
 .login-form {
+  display: none;
   position: absolute;
   z-index: 10;
   right: 0;
-  display: none;
   width: 277px;
   padding-top: 20px;
   padding-right: 17px;
@@ -488,7 +488,7 @@ img {
   padding-left: 19px;
 }
 
-.user-menu:hover .login-form {
+.login-form-show {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -721,7 +721,7 @@ img {
   bottom: 22px;
 }
 
-.slider-controls button {
+.slider-control-button {
   display: inline-block;
   margin: 0;
   margin-right: 3px;
@@ -733,12 +733,12 @@ img {
   border-radius: 50%;
 }
 
-.slider-controls button:hover,
-.slider-controls button:focus{
+.slider-control-button:hover,
+.slider-control-button:focus{
   background: rgba(255, 255, 255, 0.4);
 }
 
-.slider-controls .current {
+.slider-control-button.current {
   background-color: var(--basic-white);
 }
 
@@ -1119,7 +1119,7 @@ img {
   text-decoration: none;
 }
 
-.address-button {
+.message-button {
   width: 100%;
   padding-top: 13px;
   padding-bottom: 13px;
@@ -1242,12 +1242,29 @@ img {
 
 /* Message form */
 
+@keyframes bounce {
+  0% { transform: translateY(-2000px); }
+  70% { transform: translateY(30px); }
+  90% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+  20%, 40%, 60%, 80% { transform: translateX(10px); }
+}
+
 .modal-message {
   display: none;
   position: fixed;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-show {
+  display: block;
 }
 
 .modal-wrapper {
@@ -1263,6 +1280,13 @@ img {
   color: var(--basic-dark-grey);
   background-color: #F8F7F4;
   border-radius: 6px;
+  animation-name: bounce;
+  animation-duration: 0.6s;
+}
+
+.modal-error {
+  animation-name: shake;
+  animation-duration: 0.6s;
 }
 
 .message-form p {

@@ -48,7 +48,7 @@
 
             <div class="user-menu">
               <a class="login-link" href="#">Вход</a>
-              <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+              <form class="login-form" action="https://echo.htmlacademy.ru" method="post" autocomplete="off">
                 <p class="login-form-item">
                   <label class="visually-hidden" for="email">Ваш логин или E-mail</label>
                   <input class="input-text" type="email" name="email" id="email" placeholder="email@example.com">
@@ -98,9 +98,9 @@
               </li>
             </ul>
             <div class="slider-controls">
-              <button class="current" type="button" aria-label="Слайд 1"></button>
-              <button type="button" aria-label="Слайд 2"></button>
-              <button type="button" aria-label="Слайд 3"></button>
+              <button class="slider-control-button current" type="button" data-slide="1" aria-label="Слайд 1"></button>
+              <button class="slider-control-button" type="button" data-slide="2" aria-label="Слайд 2"></button>
+              <button class="slider-control-button" type="button" data-slide="3" aria-label="Слайд 3"></button>
             </div>
           </section>
 
@@ -204,7 +204,7 @@
                   <a href="tel:+88124502525">8 812 450-25-25</a><br>
                   (с 10 до 20 ежедневно)
                 </p>
-                <button class="button address-button" type="button">Форма обратной связи</button>
+                <button class="button message-button" type="button">Форма обратной связи</button>
               </div>
             </div>
           </div>
@@ -263,5 +263,8 @@
       </div>
     </section>
 
+    <script src="../gllacy/js/popup-message.js"></script>
+    <script src="../gllacy/js/login-form.js"></script>
+    <script src="../gllacy/js/slider.js"></script>
 	</body>
 </html>
