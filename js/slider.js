@@ -14,7 +14,6 @@ for (let i = 0;  i < slides.length; i++ ) {
 
 for (let j = 0;  j < sliderButtons.length; j++ ) {
   sliderButtons[j].classList.remove(`current`);
-  console.log(sliderButtons[j]);
 }
 
 sliderButtons[currentSlide].classList.add(`current`)
