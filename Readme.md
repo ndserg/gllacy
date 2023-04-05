@@ -26,4 +26,4 @@ __[Проект On-Line](https://gllacy.dendev.ru)__
 
 ### Скриншоты  
 ![Скриншот Главная](/screenshots/index.jpg)
-![Скриншот Главная](/screenshots/catalog.jpg)
+![Скриншот Каталог](/screenshots/catalog.jpg)
